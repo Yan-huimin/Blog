@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 .tar.gz
-.md
+.json
 /build
 
 # testing
