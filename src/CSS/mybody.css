@@ -1,0 +1,9 @@
+.container{
+    margin-top: 10%;
+    justify-items: center;
+    min-height: 100vh;
+}
+
+.na + .container{
+    margin-top: 20vh;
+}

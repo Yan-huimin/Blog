@@ -1,0 +1,15 @@
+.active{
+    background: rgba(255, 255, 255, 0.1); /* 半透明背景 */
+    backdrop-filter: blur(100px); /* 磨砂效果 */
+    border-radius: 10vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 阴影 */
+}
+
+.nav{
+    position: fixed;
+    justify-content: space-around;
+    width: 20%;
+    top: 3vh;
+    left: 40%;
+    z-index: 100;
+}

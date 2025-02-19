@@ -1,0 +1,24 @@
+.container_code{
+    margin-top: 30%;
+    font-weight: bold;
+    font-size:large;
+    text-align: center;
+}
+
+.name{
+    font-size: xx-large;
+}
+
+.imgContainer{
+    margin: 0 auto;
+}
+
+.AboutPre{
+    margin-top: 120%;
+    margin-bottom: 50%;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  }

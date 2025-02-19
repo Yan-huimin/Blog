@@ -1,0 +1,20 @@
+.linktoicp{
+    text-decoration: none;
+    color: gray;
+    font-size: smaller;
+}
+
+.linktoicp:hover{
+    text-decoration: underline;
+}
+
+.info{
+    color: gray;
+    font-size: small;
+}
+
+.beian{
+    width: 2vh;
+    height: 2vh;
+}
+
