@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../CSS/notfound.css';
 import NavBar from '../compontent/navbar';
 import Footer from '../compontent/footer';
+import Mode from '../compontent/mode';
 
 class NotFound extends Component {
     state = {  } 
@@ -19,6 +20,7 @@ class NotFound extends Component {
                         <hr />
                     </div>
                     <Footer/>
+                    <Mode DayOrNight={this.props.DayOrNight} ChangeMode={this.props.ChangeMode} />
                 </div>
             </React.Fragment>
         );

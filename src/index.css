@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   height: 100%;
   user-select: none;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,3 +11,5 @@ body {
   align-items: center;
   background: radial-gradient(circle at 100% 0%, #a0d9f2, #8dded2, #9ddda7, #c0d57f, #e3c978, #fcbb9e, #ffb0d2, #f7b0ff);
 }
+
+/*   background: radial-gradient(circle at 100% 0%, #a0d9f2, #8dded2, #9ddda7, #c0d57f, #e3c978, #fcbb9e, #ffb0d2, #f7b0ff); */

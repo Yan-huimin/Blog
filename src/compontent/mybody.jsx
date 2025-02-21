@@ -6,6 +6,7 @@ import AppLogo from './applogo';
 import Footer from './footer';
 import NavBar from './navbar';
 import Down from './down';
+import Mode from './mode';
 
 class MyBody extends Component {
     state = {  } 
@@ -14,6 +15,7 @@ class MyBody extends Component {
             <React.Fragment>
                 <div className='na'>
                     <NavBar />
+                    <Mode />
                 </div>
                 <div className="container">
                     <div className="col">

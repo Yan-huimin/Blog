@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../CSS/about.css';
 import NavBar from '../compontent/navbar';
 import Footer from '../compontent/footer';
+import Mode from '../compontent/mode';
 
 class About extends Component {
     state = {  } 
@@ -21,6 +22,7 @@ class About extends Component {
                             <Footer />
                         </div>
                     </div>
+                    <Mode DayOrNight={this.props.DayOrNight} ChangeMode={this.props.ChangeMode} />
                 </div>
             </React.Fragment>
         );
