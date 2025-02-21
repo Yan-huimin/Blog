@@ -1,0 +1,122 @@
+.login-card{
+    width: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-card{
+    background-color: rgba(255, 255, 255, 0.5) !important; /* 白色半透明背景 */
+    border-radius: 15px;  /* 圆角 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    padding: 30px;
+    width: 25vw;
+    backdrop-filter: blur(10px); /* 背景模糊效果 */
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card-body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.account-label{
+    display: flex;
+    justify-content: center;
+    color: gray;
+}
+
+.password-label{
+    display: flex;
+    justify-content: center;
+    color: grey;
+}
+
+.login-h1 {
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    color: #ff6b6b;
+    background-image: linear-gradient(to right, #ff6b6b, #4ecdc4, #45b7d1, #ff6b6b, #4ecdc4, #45b7d1, #ff6b6b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% 100%;
+    animation: gradientFlow 3s linear infinite;
+    will-change: background-position; /* 提示浏览器提前优化 */
+  }
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 0%;
+    }
+    25%{
+        background-position: 25% 25%;
+    }
+    50% {
+        background-position: 50% 50%;
+    }
+    75%{
+        background-position: 75% 75%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+.login-submit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0066cc !important; /* 半透明背景 */
+    border: transparent !important;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-submit-btn:hover{
+    background: #0076ec !important;
+}
+
+.register-link{
+    text-decoration: none;
+    font-size: small;
+    margin-top: 2vh;
+}
+
+.register-link:hover{
+    text-decoration: underline;
+}
+
+.error-message-login{
+    color: rgb(172, 0, 0);
+    font-size: smaller;
+    text-decoration: underline;
+}
+
+.account-input, .password-input{
+    background-color: rgba(255, 255, 255, 0.5) !important; /* 半透明背景 */
+    border: 1px solid rgba(255, 255, 255, 0.7); /* 白色边框 */
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.account-input:hover, .password-input:hover{
+    background-color: rgba(255, 255, 255, 0.7); /* 悬停时增加背景透明度 */
+    transform: translateY(-3px); /* 鼠标悬停时稍微上移 */
+    box-shadow: none !important;
+}
+
+.account-input:focus, .password-input:focus{
+    border-color: gray !important; /* 聚焦时边框颜色 */
+    box-shadow: none !important;
+}

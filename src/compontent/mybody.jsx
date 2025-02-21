@@ -31,7 +31,6 @@ class MyBody extends Component {
                         <Down />
                     </div>
                     <div className='col'>
-                        <hr />
                         <Footer />
                     </div>
                 </div>

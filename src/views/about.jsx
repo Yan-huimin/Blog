@@ -16,7 +16,6 @@ class About extends Component {
                     <div className="na1">
                         <div className="col">
                             <h1>Here is Nothing!!!</h1>
-                            <hr />
                         </div>
                         <div className="col">
                             <Footer />

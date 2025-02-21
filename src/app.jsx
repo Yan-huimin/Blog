@@ -5,15 +5,15 @@ import NotFound from './views/404notfound';
 import Home from './views/home';
 import { Route, Routes } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
+import Login from './views/login';
+import Register from './views/register';
 
 class App extends Component {
     state = { 
-        DayOrNight: false,
+        DayOrNight: true,
     };
 
-    // change mode
     ChangeMode = () => {
-        console.log('Click');
         this.setState({
             DayOrNight: !this.state.DayOrNight
         });
@@ -23,6 +23,8 @@ class App extends Component {
         return (
             <Routes>
                 <Route path='/blog/' element={<Home DayOrNight={this.state.DayOrNight} ChangeMode={this.ChangeMode} />}/>
+                <Route path='/blog/login' element={<Login DayOrNight={this.state.DayOrNight} ChangeMode={this.ChangeMode} />}/>
+                <Route path='/blog/register' element={<Register DayOrNight={this.state.DayOrNight} ChangeMode={this.ChangeMode} />}/>
                 <Route path='/blog/home' element={<Home DayOrNight={this.state.DayOrNight} ChangeMode={this.ChangeMode} />}/>
                 <Route path='/blog/about' element={<About DayOrNight={this.state.DayOrNight} ChangeMode={this.ChangeMode} />}/>
                 <Route path='/blog/yhm' element={<About DayOrNight={this.state.DayOrNight} ChangeMode={this.ChangeMode} />}/>
