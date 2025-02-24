@@ -3,9 +3,8 @@ import '../CSS/about.css';
 import NavBar from '../compontent/navbar';
 import Footer from '../compontent/footer';
 import Mode from '../compontent/mode';
-import Author from '../compontent/author';
 
-class About extends Component {
+class Other extends Component {
     state = {  } 
     render() { 
         return (
@@ -16,10 +15,7 @@ class About extends Component {
                     </div>
                     <div className="na1">
                         <div className="col">
-                            <img 
-                            style={{width: '8vw', height: '8vw', borderRadius: '50%'}}
-                            src='https://i.miji.bid/2025/02/23/8bdb36fe633fac411fab7a04420dd2ee.jpeg' alt='yhm'/>
-                            <Author />
+                            <h1>Awaiting development......</h1>
                         </div>
                         <div className="col">
                             <Footer />
@@ -32,4 +28,4 @@ class About extends Component {
     }
 }
 
-export default About;
+export default Other;

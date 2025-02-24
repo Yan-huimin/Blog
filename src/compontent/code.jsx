@@ -3,7 +3,7 @@ import '../CSS/code.css';
 
 class Code extends Component {
     state = {  } 
-    render() { 
+    render() {
         return (
             <React.Fragment>
                 <div className="container_code">
@@ -11,19 +11,16 @@ class Code extends Component {
                         Hello!
                     </pre>
                     <pre>
-                        My name is ?
+                        {this.props.is_login ? 'Welcome to Why Chat!' : 'Where is here?'}
                     </pre>
                     <pre className='name'>
-                        YHM
+                        {this.props.is_login ? this.props.username : 'Why Chat?'}
                     </pre>
                     <pre>
-                        I'm a 
+                        You can chat and share your life with others.
                     </pre>
                     <pre>
-                        Student
-                    </pre>
-                    <pre>
-                        What a fucking life!
+                        Enjoying
                     </pre>
                     <pre>
                         ......

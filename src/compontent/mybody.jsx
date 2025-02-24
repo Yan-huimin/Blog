@@ -19,10 +19,10 @@ class MyBody extends Component {
                 </div>
                 <div className="container">
                     <div className="col">
-                        <Head />
+                        <Head get_user_info={this.props.get_user_info} head_url={this.props.head_url} is_login={this.props.is_login} url={'https://i.miji.bid/2025/02/16/a1586ca7a468bac285bf6707676e0b41.png'} />
                     </div>
                     <div className="col">
-                        <Code />
+                        <Code username={this.props.username} is_login={this.props.is_login} />
                     </div>
                     <div className="col">
                         <AppLogo />

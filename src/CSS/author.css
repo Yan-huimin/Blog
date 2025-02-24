@@ -1,0 +1,22 @@
+.markdown-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* 强制左对齐 */
+  }
+
+  /* 列表缩进保持默认行为 */
+  .markdown-content ul {
+    padding-left: 150px;
+    text-align: left;
+  }
+
+  .markdown-content p:last-child {
+    display: flex;
+    justify-content: center;
+  }
+
+  .markdown-content p:first-child {
+    display: flex;
+    justify-content: center;
+  }

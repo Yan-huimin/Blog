@@ -11,7 +11,7 @@ class Home extends Component {
                 <div
                     className="home"
                     >
-                    <MyBody />
+                    <MyBody get_user_info={this.props.get_user_info} head_url={this.props.head_url} is_login={this.props.is_login} username={this.props.username} />
                     <Mode DayOrNight={this.props.DayOrNight} ChangeMode={this.props.ChangeMode} />
                 </div>
             </React.Fragment>
