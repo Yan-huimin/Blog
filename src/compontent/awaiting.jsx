@@ -11,5 +11,5 @@ class Awating extends Component {
         );
     }
 }
- 
+
 export default Awating;

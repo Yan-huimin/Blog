@@ -20,6 +20,15 @@ body {
   min-height: 100vh;
 }
 
+.transparent-bk {
+  background-color: rgba(255, 255, 255, 0.5) !important; /* 白色半透明背景 */
+  border-radius: 15px;  /* 圆角 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+  padding: 30px;
+  width: 400px;
+  backdrop-filter: blur(10px); /* 背景模糊效果 */
+}
+
 
 .Dynamic-gradient-color {
   font-weight: bolder;

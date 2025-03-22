@@ -1,0 +1,38 @@
+.matrix-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 15px;
+  }
+  
+  .matrix-table {
+    border-collapse: collapse;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .matrix-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .matrix-cell {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .matrix-table td input {
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+  }
+  
