@@ -28,6 +28,10 @@ class Login extends Component {
                     username: this.state.username,
                     password: this.state.password,
                 },
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer your_token_here', // 如果需要认证
+                },
                 dataType: "json",
                 beforeSend: function(xhr) {
                     xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));// 添加 CSRF token
@@ -43,7 +47,7 @@ class Login extends Component {
                         this.setState({error_message: resp.result});
                     }
                 },
-                error: (error) => {
+                error: () => {
                     alert('系统正在升级维护中,请稍后重试.');
                     this.setState({error_message: '登录失败，请稍后再试。'});
                 }

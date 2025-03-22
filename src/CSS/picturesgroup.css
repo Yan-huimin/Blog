@@ -1,0 +1,11 @@
+.carousel-image-container {
+    width: 100%;
+    height: 400px; /* 可以调整为所需的高度 */
+    overflow: hidden; /* 确保溢出的部分被裁切 */
+}
+
+.carousel-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 保证图片按比例填满容器，同时裁切超出的部分 */
+}

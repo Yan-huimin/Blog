@@ -10,6 +10,10 @@ import Register from './views/register';
 import $ from 'jquery';
 import Other from './views/other';
 import { getCookie } from './utils/utils';
+import AncientPoem from './views/ancientpoem';
+import MappingTools from './views/mappingtools';
+import MatrixCalculation from './views/matrixcalculation';
+import Music from './views/music';
 
 class App extends Component {
     state = { 
@@ -61,6 +65,10 @@ class App extends Component {
                 <Route path='/blog/home' element={<Home get_user_info={this.get_user_info} head_url={this.state.head_url} username={this.state.username} is_login={this.state.is_login} DayOrNight={this.state.DayOrNight} ChangeMode={this.ChangeMode} />}/>
                 <Route path='/blog/about' element={<About DayOrNight={this.state.DayOrNight} ChangeMode={this.ChangeMode} />}/>
                 <Route path='/blog/yhm' element={<Other DayOrNight={this.state.DayOrNight} ChangeMode={this.ChangeMode} />}/>
+                <Route path='/blog/ancientpoem' element={<AncientPoem DayOrNight={this.state.DayOrNight} ChangeMode={this.ChangeMode} />}/>
+                <Route path='/blog/mappingtools' element={<MappingTools DayOrNight={this.state.DayOrNight} ChangeMode={this.ChangeMode} />}/>
+                <Route path='/blog/matrixcalculation' element={<MatrixCalculation DayOrNight={this.state.DayOrNight} ChangeMode={this.ChangeMode} />}/>
+                <Route path='/blog/music' element={<Music DayOrNight={this.state.DayOrNight} ChangeMode={this.ChangeMode} />}/>
                 <Route path='/blog/404' element={<NotFound DayOrNight={this.state.DayOrNight} ChangeMode={this.ChangeMode} />}/>
                 <Route path='/blog/*' element={<Navigate replace to="/blog/404" />} />
             </Routes>

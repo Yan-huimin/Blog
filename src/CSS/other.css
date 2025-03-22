@@ -1,30 +1,32 @@
-.container_code{
-    margin-top: 30%;
-    font-weight: bold;
-    font-size:large;
-    text-align: center;
-    color: gray;
+.toolList-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 两列，每列占用相等空间 */
+    grid-template-rows: auto auto; /* 两行，高度根据内容自动调整 */
+    gap: 20px; /* 间距 */
 }
 
-.name{
-    font-size: xx-large;
+.toolList-body{
+    background-color: rgba(255, 255, 255, 0.5) !important; /* 白色半透明背景 */
+    border-radius: 30px;  /* 圆角 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    backdrop-filter: blur(10px); /* 背景模糊效果 */
+    overflow: hidden;
 }
 
-.imgContainer{
-    margin: 0 auto;
+img{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
 }
 
-.AboutPre{
-    margin-top: 120%;
-    margin-bottom: 50%;
+.tools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5) !important; /* 白色半透明背景 */
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.welcome_code {
+.share-h1 {
     font-weight: bolder;
     display: flex;
     justify-content: center;

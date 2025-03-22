@@ -28,7 +28,7 @@ class NavBar extends Component {
                         className="nav-link ms-1" 
                         to="/blog/yhm"
                         activeclassname="active"
-                        >Other</NavLink>
+                        >Share</NavLink>
                     </li>
                 </ul>
             </React.Fragment>
