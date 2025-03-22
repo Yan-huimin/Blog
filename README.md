@@ -19,3 +19,17 @@ soon……
 :point_up_2: :point_up_2: :point_up_2:
 
 ![home_blog](https://i.miji.bid/2025/02/19/677f0d0c27a0c95f995d6af2a4575ad3.png)
+
+:timer_clock: 2025年3月22日 18:39:31
+
+:ok_hand: Added matrix operations
+
+- Matrix addition and subtraction
+- Matrix multiplication
+- Matrix transpose
+- Matrix inversion
+
+![acf6a4bd731f9d9d0854275802f9f507.png](https://i.miji.bid/2025/03/22/acf6a4bd731f9d9d0854275802f9f507.png)
+
+
+
