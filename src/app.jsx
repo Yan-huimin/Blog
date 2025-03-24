@@ -13,7 +13,7 @@ import { getCookie } from './utils/utils';
 import AncientPoem from './views/ancientpoem';
 import MappingTools from './views/mappingtools';
 import MatrixCalculation from './views/matrixcalculation';
-import Music from './views/music';
+import Deepseek from './views/deepseek';
 
 class App extends Component {
     state = { 
@@ -39,21 +39,41 @@ class App extends Component {
     componentDidMount() {
         $.ajax({
             url: 'https://yhmyo.cn/blog/get_status/',
-            type: 'post',
-            beforeSend: function(xhr) {
-                xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));// 添加 CSRF token
+            type: 'POST',
+            headers: {
+                "X-CSRFToken": getCookie('csrftoken') 
             },
             xhrFields: {
-                withCredentials: true, // 携带 Cookie
+                withCredentials: true 
             },
+            dataType: 'json',
             success: resp => {
-                if(resp.result === 'login'){
-                    this.setState({is_login: true, username: resp.username, head_url: resp.head_url});
-                }else{
-                    this.setState({is_login: false, username: '', head_url: ''});
+                if(resp.result === 'login') {
+                    this.setState({
+                        is_login: true,
+                        username: resp.username,
+                        head_url: resp.head_url
+                    });
+                } else {
+                    this.setState({
+                        is_login: false,
+                        username: '',
+                        head_url: ''
+                    });
                 }
+            },
+            error: function(xhr, status, error) {
+                console.error('请求失败:', status, error);
             }
+        });
+
+        fetch('https://yhmyo.cn/blog/get_csrf_token/', {
+            method: 'GET',
+            credentials: 'include',
         })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error('Error:', error));
     }
 
     render() { 
@@ -68,7 +88,7 @@ class App extends Component {
                 <Route path='/blog/ancientpoem' element={<AncientPoem DayOrNight={this.state.DayOrNight} ChangeMode={this.ChangeMode} />}/>
                 <Route path='/blog/mappingtools' element={<MappingTools DayOrNight={this.state.DayOrNight} ChangeMode={this.ChangeMode} />}/>
                 <Route path='/blog/matrixcalculation' element={<MatrixCalculation DayOrNight={this.state.DayOrNight} ChangeMode={this.ChangeMode} />}/>
-                <Route path='/blog/music' element={<Music DayOrNight={this.state.DayOrNight} ChangeMode={this.ChangeMode} />}/>
+                <Route path='/blog/deepseek' element={<Deepseek DayOrNight={this.state.DayOrNight} ChangeMode={this.ChangeMode} />}/>
                 <Route path='/blog/404' element={<NotFound DayOrNight={this.state.DayOrNight} ChangeMode={this.ChangeMode} />}/>
                 <Route path='/blog/*' element={<Navigate replace to="/blog/404" />} />
             </Routes>

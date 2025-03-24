@@ -32,8 +32,8 @@ class Other extends Component {
                                         <button type="button" class="btn btn-outline-secondary">Ancient Poetry</button>
                                     </NavLink>
 
-                                    <NavLink to={'/blog/music'} className={'music'}>
-                                        <button type="button" class="btn btn-outline-secondary">  Sharing Music  </button>
+                                    <NavLink to={'/blog/deepseek'} className={'deepseek'}>
+                                        <button type="button" class="btn btn-outline-secondary">  Deepseek  </button>
                                     </NavLink>
                                     
                                 </div>

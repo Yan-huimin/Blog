@@ -1,0 +1,8 @@
+.gohome-container{
+    position: fixed;
+    height: auto;
+    width: auto;
+    top: 85%;
+    left: 90%;
+    cursor: pointer;
+}

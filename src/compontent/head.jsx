@@ -10,11 +10,11 @@ class Head extends Component {
         $.ajax({
             url: "https://yhmyo.cn/blog/logout/",
             type: 'post',
-            beforeSend: function(xhr) {
-                xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));// 添加 CSRF token
+            headers: {
+                "X-CSRFToken": getCookie('csrftoken')  
             },
             xhrFields: {
-                withCredentials: true, // 携带 Cookie
+                withCredentials: true 
             },
             success: resp => {
                 if(resp.result === 'success'){

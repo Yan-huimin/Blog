@@ -24,21 +24,17 @@ class Login extends Component {
             $.ajax({
                 url: "https://yhmyo.cn/blog/login/",
                 type: "post",
+                headers:{
+                    "X-CSRFToken": getCookie("csrftoken")
+                },
+                xhrFields: {
+                    withCredentials: true 
+                },
                 data: {
                     username: this.state.username,
                     password: this.state.password,
                 },
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': 'Bearer your_token_here', // 如果需要认证
-                },
                 dataType: "json",
-                beforeSend: function(xhr) {
-                    xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));// 添加 CSRF token
-                },
-                xhrFields: {
-                    withCredentials: true, // 携带 Cookie
-                },
                 success: resp => {
                     if (resp.result === "success") {
                         this.props.get_user_info(resp.head_url, resp.username);

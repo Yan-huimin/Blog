@@ -31,18 +31,18 @@ class Register extends Component {
             $.ajax({
                 url: "https://yhmyo.cn/blog/register/",
                 type: "post",
+                headers: {
+                    "X-CSRFToken": getCookie('csrftoken') 
+                },
+                xhrFields: {
+                    withCredentials: true 
+                },
                 data: {
                     username: this.state.username,
                     password: this.state.password,
                     confirm_password: this.state.confirm_password,
                 },
                 dataType: "json",
-                beforeSend: function(xhr) {
-                    xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));// 添加 CSRF token
-                },
-                xhrFields: {
-                    withCredentials: true, // 携带 Cookie
-                },
                 success: resp => {
                     if (resp.result === "success") {
                         alert('注册成功，请登录。');

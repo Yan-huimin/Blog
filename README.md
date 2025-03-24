@@ -31,5 +31,9 @@ soon……
 
 ![acf6a4bd731f9d9d0854275802f9f507.png](https://i.miji.bid/2025/03/22/acf6a4bd731f9d9d0854275802f9f507.png)
 
+:timer_clock: 2025年3月24日 9:24:28
 
+:sparkles: Add deepseek to my web 
+
+![a09b99f11384a02582735084744d333d.jpeg](https://i.miji.bid/2025/03/24/a09b99f11384a02582735084744d333d.jpeg)
 
